@@ -1,0 +1,50 @@
+Proceso Bencinera
+	Definir num Como Entero;
+	Escribir "Bienvenido a la Bencinera de Isaac, ¡Escaneamos automaticamente la capacidad de su vehiculo! ¿Que nivel de bencina posee? ";
+	Leer num;
+	
+	Si num <= 10 Entonces
+		Escribir "Su estanque se encuentra a nivel bajo, ¿Desea cargar? Desde mi punto le recomiendo que cargue 95 por su motor 1.8 ¿Cuanto le cargo?";
+		Leer num;
+		Si num <= 70 Entonces
+			Escribir "¡Vehiculo cargado! Gracias por cargar donde Isaac, ¡Tenga bonito dia!";
+		SiNo
+			Si num >= 71 Entonces
+				Escribir "¡Reinicie la maquina e intente con otro monto mas bajo!";
+			FinSi
+			
+		FinSi
+		
+	SiNo
+		Si num < 20 Entonces
+			Escribir "Su estanque se encuentra en nivel medio ¿Desea cargar? Su motor 1.8 le agradecera si le pone de la 95 ¿Cuanto le cargo?";
+			Leer num;
+			Si num <= 60 Entonces
+				Escribir "Vehiculo cargado! Gracias por cargar donde Isaac, ¡Tenga bonito dia!";
+			SiNo
+				Si num >= 60 Entonces
+					Escribir "¡Su vehiculo no puede tanta bencina, Reinicie la maquina porfavor!";
+				FinSi
+			FinSi
+			
+		SiNo
+			Si num >= 20 Entonces
+				Escribir "Usted tiene su estanque a nivel alto ¿Desea cargar? A mi parecer la 95 le vendria de maravilla a su vehiculo ¿Cuanto le cargo?";
+				Leer num;
+				Si num <= 50 Entonces
+					Escribir "¡Su vehiculo esta cargado!, Muchas gracias por recargar donde Isaac, ¡Que tenga un maravilloso dia!";
+				SiNo
+					Si num >= 50 Entonces
+						Escribir "Porfavor reinicie con otro monto, ¡Su tanque no aguanta tanto!";
+					FinSi
+					
+				FinSi
+				
+			FinSi
+		FinSi
+	FinSi
+	
+	
+	
+	
+	
