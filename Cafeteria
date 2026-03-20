@@ -1,0 +1,53 @@
+Proceso Cafeteria
+	Definir menu Como Entero;
+	Definir precio,iva,total Como Real;
+	Definir N1,N2 , Respuesta Como Entero;;
+	
+	Escribir "Hola buenas bienvenido a Kuroopy Cafeteria";
+	Escribir "1, Cafe malvado + Vaso con diseño = $5.990";
+	Escribir "2, Cafe aviador + Vaso con diseño = $5.990";
+	Escribir "3, Cafe malvado O Cafe aviador = $3.990";
+	Escribir "4, Cafe a gusto + Galleta de chocolate = $4.500 ";
+	Escribir "5, Te con sabor + Acompañamiento = $2.500 ";
+	Escribir "6, Salir";
+	
+	Leer menu;
+	Segun menu Hacer
+		1:
+			precio <- 5990;
+		2:
+			precio <- 5990;
+		3:
+			precio <- 3990;
+		4:
+			precio <- 4500;
+		5:
+			precio <- 2500;
+		6: 
+			Escribir "Saliendo del menu, Reinicie la maquina porfavor!"; 
+			
+			
+		De Otro Modo:
+			Escribir "Opcion no valida";
+	FinSegun
+	
+	Si menu >= 1 Y menu <= 5 Entonces
+		Iva <- precio * 0.19;
+		total <- precio + iva;
+		
+		Escribir "Precio base: $", precio;
+		Escribir "IVA (19%): $", iva;
+		Escribir "Total a pagar: $", total;
+		
+	FinSi
+	Escribir "Desea comprar? (1.Comprar/2.Nocomprar)";
+	Leer Respuesta;
+	Segun Respuesta Hacer
+		1:
+			Escribir "Muchas gracias por su compra en Kuroopy, Vuelva pronto!";
+		2:
+			Escribir "No pasa nada, Esperamos la proxima vez tener mas cosas para usted!";
+		De Otro Modo:
+			Escribir "Respuesta no valida intente nuevamente";
+	FinSegun
+FinProceso
